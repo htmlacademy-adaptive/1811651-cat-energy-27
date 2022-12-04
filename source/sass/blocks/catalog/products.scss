@@ -1,0 +1,7 @@
+.products__wrapper {
+  margin: 0 auto;
+}
+
+.products__title {
+  @include font($oswald,36px,36px,400,#000000);
+}

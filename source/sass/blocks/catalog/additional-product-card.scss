@@ -1,0 +1,12 @@
+.additional-product-card__product {
+  @include font($oswald,16px,16px,400,#222222);
+  text-transform: uppercase;
+}
+
+.additional-product-card__value {
+  @include font($lato,14px,14px,400,#444444);
+}
+
+.additional-product-card__price {
+  @include font($lato,14px,14px,400,#444444);
+}
