@@ -1,0 +1,4 @@
+.expenses {
+  @include font($oswald,14px,20px,400,#000000);
+  text-transform: uppercase;
+}

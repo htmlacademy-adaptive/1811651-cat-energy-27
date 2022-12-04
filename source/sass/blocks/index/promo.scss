@@ -1,0 +1,20 @@
+.promo__wrapper {
+  margin: 0 auto;
+}
+
+.promo__title {
+  @include font($oswald,36px,36px,400,#000000);
+
+  &--alternative {
+    color: #ffffff;
+  }
+}
+
+.promo__text {
+  @include font($oswald,14px,14px,400,#000000);
+  text-transform: uppercase;
+
+  &--alternative {
+    color: #ffffff;
+  }
+}

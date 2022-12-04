@@ -1,12 +1,25 @@
 // Начните писать стили здесь
-@use "./blocks/font.scss";
-@use "./blocks/global.scss";
-@use "./blocks/page.scss";
-@use "./blocks/main-header.scss";
-@use "./blocks/main-nav.scss";
-@use "./blocks/logo-image.scss";
-@use "./blocks/logo-text.scss";
-@use "./blocks/menu.scss";
-@use "./blocks/main-footer.scss";
-@use "./blocks/address.scss";
-@use "./blocks/social-list.scss";
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/font.scss";
+@import "./global/global.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/logo-image.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/social-list.scss";
+
+//index
+@import "./blocks/index/main-container.scss";
+@import "./blocks/index/promo.scss";
+@import "./blocks/index/programms.scss";
+@import "./blocks/index/programm-card.scss";
+@import "./blocks/index/about-product.scss";
+@import "./blocks/index/benefits.scss";
+@import "./blocks/index/example.scss";
+@import "./blocks/index/value.scss";
+@import "./blocks/index/expenses.scss";

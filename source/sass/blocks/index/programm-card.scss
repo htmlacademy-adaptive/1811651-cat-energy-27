@@ -1,0 +1,18 @@
+.programm-card {
+  background-color: #f2f2f2;
+}
+
+.programm-card__title {
+  @include font($oswald,24px,37px,400,#000000);
+  text-transform: uppercase;
+}
+
+.programm-card__description {
+  @include font($lato,14px,18px,400,#444444);
+}
+
+.programm-card__link {
+  @include font($oswald,16px,16px,400,#000000);
+  text-transform: uppercase;
+  text-decoration: none;
+}
