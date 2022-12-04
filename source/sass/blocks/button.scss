@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 80px;
+
+  @include font($oswald,16px,20px,400,#ffffff);
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+
+  &--primary {
+    background-color: #68B738;
+  }
+
+  &--secondary {
+    background-color: #f2f2f2;
+    color: #444444;
+  }
+}
