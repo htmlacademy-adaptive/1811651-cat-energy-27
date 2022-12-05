@@ -1,5 +1,7 @@
 .product-card__title {
-  @include font($oswald,16px,20px,400,#222222);
+  font-size: $font-text;
+  line-height: 20px;
+  color: #222222;
   text-transform: uppercase;
 }
 
