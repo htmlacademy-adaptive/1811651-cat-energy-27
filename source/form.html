@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -21,13 +22,13 @@
           </button>
           <ul class="main-nav__list menu">
             <li class="menu__item">
-              <a href="index.html">Главная</a>
+              <a class="menu__link" href="index.html">Главная</a>
             </li>
             <li class="menu__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="menu__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu__item menu__item--current">
-              <a>Подбор программы</a>
+              <a class="menu__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -42,7 +43,7 @@
             программу питания для вашего кота</p>
 
           <form class="programm-selection__form profile" action="#" method="get">
-            <fieldset class="visually-hidden">Данные кота
+            <fieldset>
               <div class="profile__group">
                 <div class="profile__item">
                   <label class="profile__item-title">
@@ -65,10 +66,10 @@
               </div> <!--/profile__group-->
           </fieldset>
 
-          <fieldset class="visually-hidden">
+          <fieldset>
             <div class="profile__group">
               <div class="profile__item">
-                <label class="profile__item-title">
+                <label class="profile__item-title profile__item-title--darker">
                   <input class="input" type="radio" name="programm" value="Похудение">
                   Похудение
                 </label>
@@ -113,13 +114,13 @@
             <legend class="profile__title">Дополнительно</legend>
             <div class="profile__group">
               <div class="profile__item">
-                <label class="profile__item-title">
+                <label class="profile__item-title profile__item-title--dark">
                   <input class="control-input" type="checkbox" name="сахарозаменитель" checked>
                   Сахарозаменитель
                 </label>
               </div>
               <div class="profile__item">
-                <label class="profile__item-title">
+                <label class="profile__item-title profile__item-title--dark"">
                   <input class="control-input" type="checkbox" name="питьевая вода" checked>
                   Питьевая вода
                 </label>
@@ -127,13 +128,13 @@
             </div>
             <div class="profile__group">
               <div class="profile__item">
-                <label class="profile__item-title">
+                <label class="profile__item-title profile__item-title--dark"">
                   <input class="control-input" type="checkbox" name="молоко" checked>
                   Молоко
                 </label>
               </div>
               <div class="profile__item">
-                <label class="profile__item-title">
+                <label class="profile__item-title profile__item-title--dark"">
                   <input class="control-input" type="checkbox" name="витамины" checked>
                   Витамины
                 </label>

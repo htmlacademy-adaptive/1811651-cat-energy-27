@@ -1,0 +1,29 @@
+.programm-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px;
+
+  background-color: #f2f2f2;
+
+  @include font($oswald,$font-head-h3,37px,400,#000000);
+}
+
+.programm-card__title {
+  align-self: center;
+
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.programm-card__description {
+  @include font($lato,14px,18px,400,#444444);
+}
+
+.programm-card__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}

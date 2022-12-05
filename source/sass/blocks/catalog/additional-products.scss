@@ -1,0 +1,19 @@
+.additional-products {
+  @include font($oswald,24px,24px,400,#000000);
+}
+
+.additional-products__wrapper {
+  margin: 0 auto;
+}
+
+.additional-products__title {
+  font: inherit;
+}
+
+.additional-products__banner {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.additional-products__banner-text {
+  @include font($lato,16px,20px,400,#ffffff);
+}

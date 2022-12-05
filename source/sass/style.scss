@@ -1,1 +1,39 @@
 // Начните писать стили здесь
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/font.scss";
+@import "./global/global.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/logo-image.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/button.scss";
+
+//index
+@import "./blocks/index/main-container.scss";
+@import "./blocks/index/promo.scss";
+@import "./blocks/index/programms.scss";
+@import "./blocks/index/programm-card.scss";
+@import "./blocks/index/about-product.scss";
+@import "./blocks/index/benefits.scss";
+@import "./blocks/index/example.scss";
+@import "./blocks/index/value.scss";
+@import "./blocks/index/expenses.scss";
+
+//catalog
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/products.scss";
+@import "./blocks/catalog/product-card.scss";
+@import "./blocks/catalog/stats.scss";
+@import "./blocks/catalog/additional-products.scss";
+@import "./blocks/catalog/additional-product-card.scss";
+
+//form
+@import "./blocks/form/select-program.scss";
+@import "./blocks/form/programm-selection.scss";
+@import "./blocks/form/profile.scss";

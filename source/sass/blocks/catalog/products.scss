@@ -1,0 +1,11 @@
+.products {
+  @include font($oswald,36px,36px,400,#000000);
+}
+
+.products__wrapper {
+  margin: 0 auto;
+}
+
+.products__title {
+  font: inherit;
+}

@@ -1,0 +1,17 @@
+.programm-selection {
+  @include font($oswald,36px,36px,400,#000000);
+}
+
+.programm-selection__wrapper {
+  margin: 0 auto;
+}
+
+.programm-selection__title {
+  font: inherit;
+}
+
+.programm-selection__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
