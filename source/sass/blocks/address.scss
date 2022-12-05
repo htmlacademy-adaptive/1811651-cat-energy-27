@@ -1,3 +1,10 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 26px 0;
+}
+
 .address__invite {
   margin: 0;
   padding: 0;

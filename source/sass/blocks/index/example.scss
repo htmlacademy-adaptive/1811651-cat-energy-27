@@ -1,13 +1,18 @@
 .example {
   background-color: #f2f2f2;
+
+  @include font($oswald,36px,40px,400,#000000);
 }
 
 .example__wrapper {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px 0 40px 0;
 }
 
 .example__title {
-  @include font($oswald,36px,40px,400,#000000);
+  font: inherit;
 }
 
 .example__text {

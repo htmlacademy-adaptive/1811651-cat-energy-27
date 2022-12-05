@@ -1,9 +1,17 @@
+.promo {
+  @include font($oswald,$font-head-h2,36px,400,#000000);
+}
+
 .promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+  padding: 25px 15px;
 }
 
 .promo__title {
-  @include font($oswald,36px,36px,400,#000000);
+  font: inherit;
 
   &--alternative {
     color: #ffffff;
@@ -11,7 +19,8 @@
 }
 
 .promo__text {
-  @include font($oswald,14px,14px,400,#000000);
+  font-size: $font-text;
+  line-height: 100%;
   text-transform: uppercase;
 
   &--alternative {

@@ -1,7 +1,13 @@
+.value {
+  display: flex;
+  justify-content: space-between;
+}
+
 .value__term {
   @include font($lato,12px,12px,400,#444444);
 }
 
 .value__description {
-  @include font($oswald,24px,24px,400,#000000);
+  font-size: $font-head-h3;
+  line-height: 100%;
 }
