@@ -1,0 +1,10 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+
+  @include font($lato,$font-text,19px,400,#444444);
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
