@@ -1,5 +1,6 @@
 .button {
   padding: 10px 80px;
+  display: inline-block;
 
   @include font($oswald,16px,20px,400,#ffffff);
   text-transform: uppercase;
