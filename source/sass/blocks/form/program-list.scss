@@ -1,0 +1,15 @@
+.program-list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.program-list__item-title {
+  &--darker {
+    color: #222222;
+  }
+
+  &--dark {
+    color: #000000;
+  }
+}

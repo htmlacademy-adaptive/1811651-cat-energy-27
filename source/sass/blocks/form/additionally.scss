@@ -1,0 +1,33 @@
+.additionally {
+  margin-bottom: 34px;
+}
+
+.additionally__title {
+  font-size: $font-head-h3;
+  line-height: 26px;
+
+  &--darker {
+    color: #222222;
+  }
+
+  &--dark {
+    color: #000000;
+  }
+}
+
+.additionally__group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 282px;
+    gap: 32px 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 284px);
+    gap: 0 84px;
+  }
+}

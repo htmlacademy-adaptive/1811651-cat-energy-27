@@ -4,6 +4,17 @@
 
 .programm-selection__wrapper {
   margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0;
+  }
 }
 
 .programm-selection__title {

@@ -1,0 +1,24 @@
+.contacts {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 568px;
+    gap: 0 80px;
+  }
+}
+
+.contacts__title {
+  font-size: $font-head-h3;
+  line-height: 26px;
+
+  &--darker {
+    color: #222222;
+  }
+
+  &--dark {
+    color: #000000;
+  }
+}

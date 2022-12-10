@@ -1,0 +1,11 @@
+.cat-info {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.cat-info__item {
+  display: flex;
+  align-items: center;
+}
+

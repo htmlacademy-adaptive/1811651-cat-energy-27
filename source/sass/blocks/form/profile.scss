@@ -1,25 +1,41 @@
 .profile {
   @include font($oswald,16px,18px,400,#444444);
-}
-
-.profile__item-title {
   text-transform: uppercase;
-
-  &--darker {
-    color: #222222;
-  }
-
-  &--dark {
-    color: #000000;
-  }
 }
 
-.profile__title {
-  font-size: $font-head-h3;
-  line-height: 26px;
-  color: #000000;
+.profile__field {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.profile__wrapper-cat {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 568px;
+    gap: 0 80px;
+  }
 }
 
 .profile__fields {
   @include font($lato,14px,16px,400,#000000);
+  text-transform: none;
+}
+
+.profile__wrapper-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 282px;
+    gap: 32px 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 568px 568px;
+    gap: 0 84px;
+  }
 }
