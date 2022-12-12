@@ -4,8 +4,28 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 37px 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0 73px;
+  }
 }
 
 .benefits__item {
   margin-bottom: 24px;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding: 0;
+    height: 280px;
+  }
 }

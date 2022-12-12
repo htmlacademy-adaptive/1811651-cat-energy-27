@@ -6,15 +6,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 280px;
   margin: 0 auto;
-  padding: 25px 15px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .promo__title {
   font: inherit;
+  text-align: center;
 
   &--alternative {
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    text-align: start;
   }
 }
 
@@ -26,4 +43,8 @@
   &--alternative {
     color: #ffffff;
   }
+}
+
+.promo__image {
+  display: block;
 }

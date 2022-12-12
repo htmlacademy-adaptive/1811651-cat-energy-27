@@ -1,0 +1,34 @@
+.comment {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.comment__title {
+  font-size: $font-head-h3;
+  line-height: 26px;
+
+  &--darker {
+    color: #222222;
+  }
+
+  &--dark {
+    color: #000000;
+  }
+}
+
+.comment__text {
+  padding: 0;
+  margin: 0;
+  width: 280px;
+  font: inherit;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}

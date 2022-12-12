@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -11,27 +12,29 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <a class="logo-image" href="#">
-            <img src="#" width="34" height="38" alt="Интернет магазин Кэт Энерджи">
-          </a>
-          <a class="logo-text" href="#">
-            <img src="#" width="101" height="18" alt="Интернет магазин Кэт Энерджи">
-          </a>
+          <div class="main-nav__logo">
+            <a class="main-nav__logo-image logo-image" href="#">
+              <img src="#" width="34" height="38" alt="Интернет магазин Кэт Энерджи">
+            </a>
+            <a class="main-nav__logo-text logo-text" href="#">
+              <img src="#" width="101" height="18" alt="Интернет магазин Кэт Энерджи">
+            </a>
+          </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list menu">
-            <li class="menu__item menu__item--current">
-              <a class="menu__link">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
         </div>
+        <ul class="main-nav__list menu">
+          <li class="menu__item menu__item--current">
+            <a class="menu__link">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -42,8 +45,8 @@
         <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <a class="button button--primary">Подобрать программу</a>
           <img class="promo__image" src="#" width="280" height="270" alt="Товар дня">
+          <a class="button button--primary">Подобрать программу</a>
         </div>
       </section>
 
@@ -93,65 +96,74 @@
 
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="example__list value">
-            <div class="value__item">
-              <dt class="value__term">Снижение веса</dt>
-              <dd class="value__description">5 кг</dd>
+          <div class="example__container-desktop">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__inner-wrapper">
+              <dl class="example__list value">
+                <div class="value__item">
+                  <dt class="value__term">Снижение веса</dt>
+                  <dd class="value__description">5 кг</dd>
+                </div>
+                <div class="value__item">
+                  <dt class="value__term">Затрачено времени</dt>
+                  <dd class="value__description">60 дней</dd>
+                </div>
+              </dl>
+              <div class="example__results expenses">
+                <p class="expenses__title">Затраты на питание:</p>
+                <p class="expenses__price">15 000 Руб.</p>
+              </div>
             </div>
-            <div class="value__item">
-              <dt class="value__term">Затрачено времени</dt>
-              <dd class="value__description">60 дней</dd>
+            <div class="example__slider difference-slider">
+              <div class="difference-slider__before"></div>
+              <div class="difference-slider__after"></div>
+              <div class="difference-slider__control"></div>
             </div>
-          </dl>
-          <div class="example__results expenses">
-            <p class="expenses__title">Затраты на питание:</p>
-            <p class="expenses__price">15 000 Руб.</p>
-          </div>
-          <div class="example__slider difference-slider">
-            <div class="difference-slider__before"></div>
-            <div class="difference-slider__after"></div>
-            <div class="difference-slider__control"></div>
           </div>
         </div> <!--/example__wrapper-->
       </section>
 
+      <section class="dealers-info">
+        <h2 class="visually-hidden">Информация для диллеров</h2>
+        <div class="dealers-info__wrapper">
+          <p class="dealers-info__invite">Приглашаем<br>
+            к сотрудничеству<br>
+            диллеров!</p>
+          <address class="dealers-info__contacts">ул. Большая<br>
+            Конюшенная, д. 19/8 <br>
+            Санкт-Петербург</address>
+      </div>
+        <img class="dealers-info__map" src="#" width="320" height="360" alt="Расположение магазина Кэт Энерджи">
+        <img class="dealers-info__logo-pin" src="#" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+      </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__location address">
-          <p class="address__invite">Приглашаем к сотрудничеству диллеров!</p>
-          <address class="address__contacts">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</address>
-        </div>
-        <div class="main-footer__map">
-          <img src="#" width="320" height="360" alt="Расположение магазина Кэт Энерджи">
-        </div>
-        <div class="main-footer__copyright">
-          <a class="logo" href="#">
-            <span class="visually-hidden">Интернет-магазин Кэт Энерджи</span>
-          </a>
-          <ul class="social-list">
-            <li class="social-list__icon">
-              <a class="social-list__link" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-list__icon">
-              <a class="social-list__link" href="#">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-            <li class="social-list__icon">
-              <a class="social-list__link" href="#">
-                <span class="visually-hidden">Телеграмм</span>
-              </a>
-            </li>
-          </ul>
-          <a class="social-list__link" href="#">
+        <a class="logo" href="#">
+          <span class="visually-hidden">Интернет-магазин Кэт Энерджи</span>
+        </a>
+        <ul class="social-list">
+          <li class="social-list__icon">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__icon">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="social-list__icon">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="#">
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>

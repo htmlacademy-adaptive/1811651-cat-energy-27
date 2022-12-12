@@ -9,6 +9,37 @@
   flex-direction: column;
 
   padding: 25px 0 40px 0;
+
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.example__container-desktop {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 225px;
+  }
+}
+
+.example__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .example__title {

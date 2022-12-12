@@ -1,3 +1,5 @@
 .input {
   @include font($oswald,16px,18px,400,#444444);
+  text-transform: uppercase;
+  width: 100%;
 }

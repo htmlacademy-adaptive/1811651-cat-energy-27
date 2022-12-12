@@ -1,0 +1,57 @@
+.dealers-info {
+  @include font($oswald, 16px,20px,400,#111111);
+}
+
+.dealers-info__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+
+  margin: 0 auto;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-evenly;
+    width: 565px;
+  }
+}
+
+.dealers-info__invite {
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+.dealers-info__contacts {
+  margin: 0;
+  padding: 0;
+
+  font-family: $lato;
+  font-size: $font-text;
+  font-style: normal;
+  color: #444444;
+}
+
+.dealers-info__map {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.dealers-info__logo-pin {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+  }
+}
