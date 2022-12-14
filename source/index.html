@@ -10,18 +10,16 @@
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
 
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <div class="main-nav__logo">
-            <a class="main-nav__logo-image logo-image" href="#">
-              <img src="#" width="34" height="38" alt="Интернет магазин Кэт Энерджи">
-            </a>
-            <a class="main-nav__logo-text logo-text" href="#">
-              <img src="#" width="101" height="18" alt="Интернет магазин Кэт Энерджи">
-            </a>
-          </div>
+          <a class="main-nav__logo-image logo-image" href="#">
+            <img class="logo-image__item" src="img/logo-mobile.svg" width="34" height="38" alt="Интернет магазин Кэт Энерджи">
+          </a>
+          <a class="main-nav__logo-text logo-text" href="#">
+            <img class="logo-text__item" src="img/logo-text.svg" width="101" height="18" alt="Интернет магазин Кэт Энерджи">
+          </a>
           <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list menu">
@@ -170,5 +168,6 @@
       </div> <!--/main-footer__wrapper-->
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>
