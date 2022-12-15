@@ -1,10 +1,40 @@
 .copyright {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 0;
 
   @include font($lato,$font-text,19px,400,#444444);
 
   @media (min-width: $tablet-width) {
-    width: 163px;
+    width: 35%;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+}
+
+.copyright__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 0 20px;
   }
 }
