@@ -4,14 +4,59 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    gap: 0 42px;
+  }
+}
+
+.value__item {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
   }
 }
 
 .value__term {
+  position: absolute;
+  bottom: -10px;
+  background-color: #eaeaea;
+
   @include font($lato,12px,12px,400,#444444);
+
+  width: 77px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    bottom: -7px;
+
+    padding: 0 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .value__description {
   font-size: $font-head-h3;
   line-height: 100%;
+
+  margin: 0;
+  padding: 14px 0 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 0 20px;
+  }
 }

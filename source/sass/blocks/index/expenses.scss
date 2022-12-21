@@ -2,4 +2,37 @@
   font-size: $font-text;
   line-height: 20px;
   text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 2px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0 63px;
+  }
+}
+
+.expenses__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.expenses__price {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
