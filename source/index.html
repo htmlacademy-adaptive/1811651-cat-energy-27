@@ -135,16 +135,24 @@
 
       <section class="dealers-info">
         <h2 class="visually-hidden">Информация для диллеров</h2>
-        <div class="dealers-info__wrapper">
-          <p class="dealers-info__invite">Приглашаем<br>
-            к сотрудничеству<br>
-            диллеров!</p>
-          <address class="dealers-info__contacts">ул. Большая<br>
-            Конюшенная, д. 19/8 <br>
-            Санкт-Петербург</address>
-      </div>
-        <img class="dealers-info__map" src="#" width="320" height="360" alt="Расположение магазина Кэт Энерджи">
-        <img class="dealers-info__logo-pin" src="#" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+        <div class="dealers-info__container">
+          <div class="dealers-info__wrapper">
+            <p class="dealers-info__invite">Приглашаем<br>
+              к сотрудничеству<br>
+              диллеров!</p>
+            <address class="dealers-info__contacts">ул. Большая<br>
+              Конюшенная, д. 19/8 <br>
+              Санкт-Петербург</address>
+          </div>
+          <div class="dealers-info__map-wrapper">
+            <picture>
+              <source srcset="./img/index/map-desktop.jpg" media="(min-width:1280px)">
+              <source srcset="./img/index/map-tablet.jpg" media="(min-width:768px)">
+              <img class="dealers-info__map" src="img/index/map-mobile.jpg" width="320" height="360" alt="Расположение магазина Кэт Энерджи">
+            </picture>
+            <img class="dealers-info__logo-pin" src="img/index/map-pin.png" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+          </div>
+        </div>
       </section>
     </main>
 
