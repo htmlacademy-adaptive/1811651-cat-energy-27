@@ -3,29 +3,114 @@
 
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
+  counter-reset: my-awesome-counter;
 
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr 250px;
+    padding-right: 75px;
     gap: 37px 140px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
     gap: 0 73px;
+
+    padding: 0;
   }
 }
 
 .benefits__item {
+  position: relative;
+  counter-increment: my-awesome-counter;
+  min-height: 54px;
   margin-bottom: 24px;
   padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "" counter(my-awesome-counter);
+      position: absolute;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      top: 0;
+      right: 0;
+      z-index: -2;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 250px;
     padding: 0;
-    height: 280px;
+    height: 130px;
+
+    padding-top: 151px;
+    margin: 0;
+  }
+
+  &--first {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/index/decorative-image/leaf.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--second {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/index/decorative-image/flour.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--third {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/index/decorative-image/eat.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--fourth {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/index/decorative-image/clock.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 }
