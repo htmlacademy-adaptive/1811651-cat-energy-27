@@ -1,0 +1,21 @@
+.radio {
+  &:checked + .radio__mark::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #68b738;
+    border-radius: 50%;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+.radio__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  top: 0;
+}

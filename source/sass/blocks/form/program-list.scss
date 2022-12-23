@@ -1,15 +1,41 @@
 .program-list {
+  margin: 0;
+  padding: 22px 0 19px;
+  border-bottom: 1px solid #d9d9d9;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    border-bottom: none;
+    padding: 25px 0 28px;
+    margin: 0 71px 70px 71px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin: 0;
+    margin-bottom: 81px;
+    padding: 25px 0;
   }
 }
 
+.program-list__item {
+  position: relative;
+  margin-bottom: 13px;
+}
+
 .program-list__item-title {
+  display: inline-block;
+  padding: 6px 45px;
+
   &--darker {
     color: #222222;
   }
 
   &--dark {
     color: #000000;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

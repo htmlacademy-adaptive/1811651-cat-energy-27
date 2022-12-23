@@ -42,101 +42,121 @@
           <h2 class="programm-selection__title">Подбор программы</h2>
           <p class="programm-selection__text">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
+        </div>
 
           <form class="programm-selection__form profile" action="#" method="get">
             <div class="profile__wrapper-cat">
               <fieldset class="profile__field cat-info">
-                <div class="cat-info__item">
-                  <label class="cat-info__item-title" for="cat_name">
-                    Имя:*
-                  </label>
-                  <input class="cat-info__input input" type="text" name="name" id="cat_name"  placeholder="Барсик" required>
-                </div>
-                <div class="cat-info__item">
-                  <label class="cat-info__item-title" for="cat_weight">
-                    Вес (кг):*
-                  </label>
-                  <input class="cat-info__input input" type="number" name="weight" id="cat_weight" placeholder="7" required>
-                </div>
-                <div class="cat-info__item">
-                  <label class="cat-info__item-title" for="cat_age">
-                    Возраст (лет):
-                  </label>
-                  <input class="cat-info__input input" type="number" name="age" id="cat_age" placeholder="7">
+                <div class="programm-selection__wrapper programm-selection__wrapper--cat-info">
+                  <div class="cat-info__item">
+                    <label class="cat-info__item-title" for="cat_name">
+                      Имя:*
+                    </label>
+                    <input class="cat-info__input input" type="text" name="name" id="cat_name"  placeholder="Барсик" required>
+                  </div>
+                  <div class="cat-info__item">
+                    <label class="cat-info__item-title" for="cat_weight">
+                      Вес (кг):*
+                    </label>
+                    <input class="cat-info__input input" type="number" name="weight" id="cat_weight" placeholder="7" required>
+                  </div>
+                  <div class="cat-info__item">
+                    <label class="cat-info__item-title" for="cat_age">
+                      Возраст (лет):
+                    </label>
+                    <input class="cat-info__input input" type="number" name="age" id="cat_age" placeholder="7">
+                  </div>
                 </div>
               </fieldset>
 
               <fieldset class="profile__field program-list">
-                <div class="program-list__item">
-                  <input class="program-list__radio radio" type="radio" name="programm" id="less_weight" value="Похудение">
-                  <label class="program-list__item-title program-list__item-title--darker" for="less_weight">
-                    Похудение
-                  </label>
-                </div>
-                <div class="program-list__item">
-                  <input class="program-list__radio radio" type="radio" name="programm" id="more_weight" value="Набор массы">
-                  <label class="program-list__item-title program-list__item-title--darker" for="more_weight">
-                    Набор массы
-                  </label>
-                </div>
-                <div class="program-list__item">
-                  <input class="program-list__radio radio" type="radio" name="programm" id="need_advice" value="Нужен ваш совет">
-                  <label class="program-list__item-title program-list__item-title--darker" for="need_advice">
-                    Не знаю (нужен ваш совет)
-                  </label>
+                <div class="programm-selection__wrapper programm-selection__wrapper--radio">
+                  <div class="program-list__item">
+                    <input class="program-list__radio radio visually-hidden" type="radio" name="programm" id="less_weight" value="Похудение">
+                    <span class="radio__mark"></span>
+                    <label class="program-list__item-title program-list__item-title--darker" for="less_weight">
+                      Похудение
+                    </label>
+                  </div>
+                  <div class="program-list__item">
+                    <input class="program-list__radio radio visually-hidden" type="radio" name="programm" id="more_weight" value="Набор массы">
+                    <span class="radio__mark"></span>
+                    <label class="program-list__item-title program-list__item-title--darker" for="more_weight">
+                      Набор массы
+                    </label>
+                  </div>
+                  <div class="program-list__item">
+                    <input class="program-list__radio radio visually-hidden" type="radio" name="programm" id="need_advice" value="Нужен ваш совет">
+                    <span class="radio__mark"></span>
+                    <label class="program-list__item-title program-list__item-title--darker" for="need_advice">
+                      Не знаю (нужен ваш совет)
+                    </label>
+                  </div>
                 </div>
               </fieldset>
             </div>
 
           <fieldset class="profile__field contacts">
-            <legend class="contacts__title contacts__title--dark">Контакные данные (владельца кота)</legend>
-            <div class="contacts__item">
-              <label class="contacts__item-title" for="user_email">
-                E-mail:*
-              </label>
-              <input class="contacts__input input" type="email" name="email" id="user_email" placeholder="кuklachev@gmail.com" required>
-            </div>
-            <div class="contacts__item">
-              <label class="contacts__item-title" for="user_phone">
-                Телефон:*
-              </label>
-              <input class="contacts__input input" type="tel" name="phone" id="user_phone" placeholder="8 (960) 900-60-90" required>
+            <div class="programm-selection__wrapper">
+              <h3 class="contacts__title contacts__title--dark">Контакные данные (владельца кота)</h3>
+              <div class="contacts__container">
+                <div class="contacts__item">
+                  <label class="contacts__item-title" for="user_email">
+                    E-mail:*
+                  </label>
+                  <input class="contacts__input contacts__input--email input" type="email" name="email" id="user_email" placeholder="кuklachev@gmail.com" required>
+                </div>
+                <div class="contacts__item">
+                  <label class="contacts__item-title" for="user_phone">
+                    Телефон:*
+                  </label>
+                  <input class="contacts__input contacts__input--phone input" type="tel" name="phone" id="user_phone" placeholder="8 (960) 900-60-90" required>
+                </div>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="profile__field comment">
-            <legend class="comment__title comment__title--dark">Комментарий</legend>
-            <div class="comment__item">
-              <textarea class="comment__text" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="programm-selection__wrapper">
+              <h3 class="comment__title comment__title--dark">Комментарий</h3>
+              <div class="comment__item">
+                <textarea class="comment__text" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="profile__field additionally">
-            <legend class="additionally__title additionally__title--dark">Дополнительно</legend>
-            <div class="additionally__group">
-              <div class="additionally__item">
-                <label class="additionally__item-title additionally__item-title--dark">
-                  <input class="control-input" type="checkbox" name="сахарозаменитель" checked>
-                  Сахарозаменитель
-                </label>
-              </div>
-              <div class="additionally__item">
-                <label class="additionally__item-title additionally__item-title--dark">
-                  <input class="control-input" type="checkbox" name="питьевая вода" checked>
-                  Питьевая вода
-                </label>
-              </div>
-              <div class="additionally__item">
-                <label class="additionally__item-title additionally__item-title--dark">
-                  <input class="control-input" type="checkbox" name="молоко" checked>
-                  Молоко
-                </label>
-              </div>
-              <div class="additionally__item">
-                <label class="additionally__item-title additionally__item-title--dark">
-                  <input class="control-input" type="checkbox" name="витамины" checked>
-                  Витамины
-                </label>
+            <div class="programm-selection__wrapper">
+              <h3 class="additionally__title additionally__title--dark">Дополнительно</h3>
+              <div class="additionally__group">
+                <div class="additionally__item">
+                  <label class="additionally__item-title additionally__item-title--dark">
+                    <input class="control-input visually-hidden" type="checkbox" name="сахарозаменитель" checked>
+                    <span class="control-input__mark"></span>
+                    Сахарозаменитель
+                  </label>
+                </div>
+                <div class="additionally__item">
+                  <label class="additionally__item-title additionally__item-title--dark">
+                    <input class="control-input visually-hidden" type="checkbox" name="питьевая вода" checked>
+                    <span class="control-input__mark"></span>
+                    Питьевая вода
+                  </label>
+                </div>
+                <div class="additionally__item">
+                  <label class="additionally__item-title additionally__item-title--dark">
+                    <input class="control-input visually-hidden" type="checkbox" name="молоко" checked>
+                    <span class="control-input__mark"></span>
+                    Молоко
+                  </label>
+                </div>
+                <div class="additionally__item">
+                  <label class="additionally__item-title additionally__item-title--dark">
+                    <input class="control-input visually-hidden" type="checkbox" name="витамины" checked>
+                    <span class="control-input__mark"></span>
+                    Витамины
+                  </label>
+                </div>
               </div>
             </div> <!--/profile__group-->
           </fieldset>
@@ -145,23 +165,30 @@
             <button class="button button--primary" type="submit">Отправить заявку</button>
             <p class="profile__fields">* — Обязательные поля</p>
           </div>
-          </form>
-        </div> <!--/programm-selection__wrapper-->
+          </form><!--/programm-selection__wrapper-->
 
       </div>
 
-      <section class="dealers-info">
+      <section class="dealers-info dealers-info--darker">
         <h2 class="visually-hidden">Информация для диллеров</h2>
-        <div class="dealers-info__wrapper">
-          <p class="dealers-info__invite">Приглашаем<br>
-            к сотрудничеству<br>
-            диллеров!</p>
-          <address class="dealers-info__contacts">ул. Большая<br>
-            Конюшенная, д. 19/8 <br>
-            Санкт-Петербург</address>
-      </div>
-        <img class="dealers-info__map" src="#" width="320" height="360" alt="Расположение магазина Кэт Энерджи">
-        <img class="dealers-info__logo-pin" src="#" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+        <div class="dealers-info__container">
+          <div class="dealers-info__wrapper">
+            <p class="dealers-info__invite">Приглашаем<br>
+              к сотрудничеству<br>
+              диллеров!</p>
+            <address class="dealers-info__contacts">ул. Большая<br>
+              Конюшенная, д. 19/8 <br>
+              Санкт-Петербург</address>
+          </div>
+          <div class="dealers-info__map-wrapper">
+            <picture>
+              <source srcset="./img/index/map-desktop.jpg" media="(min-width:1280px)">
+              <source srcset="./img/index/map-tablet.jpg" media="(min-width:768px)">
+              <img class="dealers-info__map" src="img/index/map-mobile.jpg" width="320" height="360" alt="Расположение магазина Кэт Энерджи">
+            </picture>
+            <img class="dealers-info__logo-pin" src="img/index/map-pin.png" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+          </div>
+        </div>
       </section>
     </main>
 
