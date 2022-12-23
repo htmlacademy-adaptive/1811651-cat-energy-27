@@ -16,6 +16,11 @@
       left: 8px;
     }
   }
+
+  &:disabled + .control-input__mark,
+  &:disabled ~ .additionally__label {
+    opacity: 0.3;
+  }
 }
 
 .control-input__mark {

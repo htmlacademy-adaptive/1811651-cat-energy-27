@@ -9,4 +9,16 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }

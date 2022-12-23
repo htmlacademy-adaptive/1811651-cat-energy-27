@@ -197,4 +197,24 @@
       top: 10px;
     }
   }
+
+  &:hover {
+    &::before {
+      background: none;
+      background-image: url("../../../img/index/decorative-image/long-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      top: 4px;
+      left: 102px;
+
+      @media (min-width: $tablet-width) {
+        left: 130px;
+        top: 10px;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

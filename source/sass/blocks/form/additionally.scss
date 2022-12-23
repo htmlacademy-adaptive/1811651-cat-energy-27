@@ -84,8 +84,18 @@
   position: relative;
   padding: 6px 0 6px 46px;
 
+  &:hover .control-input__mark {
+    border-color: #bababa;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-left: 60px;
+  }
+}
+
+.additionally__button {
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
   }
 }

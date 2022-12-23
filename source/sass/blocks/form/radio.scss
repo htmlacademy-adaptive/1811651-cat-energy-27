@@ -9,6 +9,15 @@
     top: 8px;
     left: 8px;
   }
+
+  &:hover + .radio__mark {
+    border-color: #bababa;
+  }
+
+  &:disabled + .radio__mark,
+  &:disabled ~ .program-list__item-title {
+    opacity: 0.3;
+  }
 }
 
 .radio__mark {
