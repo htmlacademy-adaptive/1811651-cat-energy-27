@@ -222,6 +222,11 @@
 .logo-text {
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .logo-text {
+    display: none;
+  }
+}
 .logo-text:hover {
   opacity: 0.8;
 }
@@ -1440,10 +1445,30 @@
 }
 
 .products__title {
+  position: relative;
   font: inherit;
   margin: 0;
   margin-top: 27px;
   margin-bottom: 41px;
+}
+.products__title::after {
+  content: "";
+  position: absolute;
+  width: 114%;
+  height: 1px;
+  background-color: #ebebeb;
+  bottom: -41px;
+  left: -7%;
+  right: -10%;
+}
+@media (min-width: 768px) {
+  .products__title::after {
+    width: auto;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
 }
 @media (min-width: 768px) {
   .products__title {
@@ -1455,6 +1480,7 @@
 }
 
 .products__cards {
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -1462,6 +1488,25 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+.products__cards::after {
+  content: "";
+  position: absolute;
+  width: 114%;
+  height: 1px;
+  background-color: #ebebeb;
+  bottom: -25px;
+  left: -7%;
+  right: -10%;
+}
+@media (min-width: 768px) {
+  .products__cards::after {
+    width: auto;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
 }
 @media (min-width: 768px) {
   .products__cards {
@@ -1480,10 +1525,45 @@
 }
 
 .product-card {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr 40px;
   padding: 8px 0 11px 0;
+}
+.product-card::after {
+  content: "";
+  position: absolute;
+  width: 114%;
+  height: 1px;
+  background-color: #ebebeb;
+  bottom: -10px;
+  left: -7%;
+  right: -10%;
+}
+@media (min-width: 768px) {
+  .product-card::after {
+    width: auto;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+}
+.product-card:last-of-type::after {
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 23px;
+  left: auto;
+  right: auto;
+  transform: rotate(90deg);
+}
+@media (min-width: 768px) {
+  .product-card:last-of-type::after {
+    width: 60px;
+    top: 62px;
+  }
 }
 @media (min-width: 768px) {
   .product-card {
@@ -1512,21 +1592,6 @@
 }
 @media (min-width: 768px) {
   .product-card--more-info::before {
-    width: 60px;
-    top: 62px;
-  }
-}
-.product-card--more-info::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: #d3d3d3;
-  top: 23px;
-  transform: rotate(90deg);
-}
-@media (min-width: 768px) {
-  .product-card--more-info::after {
     width: 60px;
     top: 62px;
   }
@@ -1737,6 +1802,7 @@
 .additional-products__title {
   font: inherit;
   margin: 0;
+  margin-top: 25px;
   margin-bottom: 36px;
   display: inline-block;
   position: relative;
