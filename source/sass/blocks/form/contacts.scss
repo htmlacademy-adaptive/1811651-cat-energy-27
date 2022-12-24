@@ -70,6 +70,7 @@
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0 10px;
@@ -88,19 +89,38 @@
   }
 }
 
+.contacts__icon-email,
+.contacts__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
+}
+
 .contacts__input {
   position: relative;
   padding-right: 40px;
 
-  &--email {
-    background-image: url("../../../img/form/email.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
+  &:invalid + {
+    .contacts__icon-email path {
+      stroke: #ff8282;
+    }
+
+    .contacts__icon-phone path {
+      stroke: #ff8282;
+    }
   }
 
-  &--phone {
-    background-image: url("../../../img/form/phone.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
+  &:focus-visible + {
+    .contacts__icon-email path {
+      stroke: #67b737;
+    }
+
+    .contacts__icon-phone path {
+      stroke: #67b737;
+    }
   }
 }

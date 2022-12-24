@@ -1,5 +1,7 @@
 .additional-products {
   @include font($oswald,24px,24px,400,#000000);
+
+  overflow-x: hidden;
 }
 
 .additional-products__wrapper {
@@ -19,6 +21,34 @@
   font: inherit;
   margin: 0;
   margin-bottom: 36px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: 1;
+    right: calc(100% + 30px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: 1;
+    left: calc(50% + 130px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;

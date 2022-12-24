@@ -3,12 +3,14 @@
   margin: 0;
   list-style-type: none;
   background-color: #ffffff;
+  width: 100%;
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
+    width: 57%;
     padding-top: 42px;
 
     &:last-child {
@@ -17,6 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 478px;
     background-color: rgba($color: #000000, $alpha: 0);
     padding-top: 69px;
   }
