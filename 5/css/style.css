@@ -238,12 +238,14 @@
   margin: 0;
   list-style-type: none;
   background-color: #ffffff;
+  width: 100%;
 }
 .menu:last-child {
   border-bottom: 1px solid #e6e6e6;
 }
 @media (min-width: 768px) {
   .menu {
+    width: 57%;
     padding-top: 42px;
   }
   .menu:last-child {
@@ -252,6 +254,7 @@
 }
 @media (min-width: 1280px) {
   .menu {
+    max-width: 478px;
     background-color: rgba(0, 0, 0, 0);
     padding-top: 69px;
   }
@@ -624,7 +627,7 @@
   left: 0;
   right: 0;
   background: #444444;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../../img/index/index-background.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("./img/index/index-background.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50%;
@@ -641,7 +644,7 @@
     height: 694px;
     top: -111px;
     left: 50%;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../../img/index/index-background-desktop.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("./img/index/index-background-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -784,6 +787,7 @@
     display: grid;
     grid-template-columns: 570px 570px;
     gap: 0 80px;
+    margin-bottom: 71px;
   }
 }
 
@@ -983,7 +987,7 @@
   position: absolute;
   width: 32px;
   height: 10px;
-  background-image: url("../../../img/index/decorative-image/arrow.svg");
+  background-image: url("./img/index/decorative-image/arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   top: 4px;
@@ -997,7 +1001,7 @@
 }
 .programm-card__link:hover::before {
   background: none;
-  background-image: url("../../../img/index/decorative-image/long-arrow.svg");
+  background-image: url("./img/index/decorative-image/long-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   top: 4px;
@@ -1033,6 +1037,7 @@
 @media (min-width: 1280px) {
   .about-product__wrapper {
     width: 1220px;
+    margin-bottom: 69px;
   }
 }
 
@@ -1128,28 +1133,28 @@
 .benefits__item--first::before {
   content: "";
   position: absolute;
-  background-image: url("../../../img/index/decorative-image/leaf.svg");
+  background-image: url("./img/index/decorative-image/leaf.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .benefits__item--second::before {
   content: "";
   position: absolute;
-  background-image: url("../../../img/index/decorative-image/flour.svg");
+  background-image: url("./img/index/decorative-image/flour.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .benefits__item--third::before {
   content: "";
   position: absolute;
-  background-image: url("../../../img/index/decorative-image/eat.svg");
+  background-image: url("./img/index/decorative-image/eat.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .benefits__item--fourth::before {
   content: "";
   position: absolute;
-  background-image: url("../../../img/index/decorative-image/clock.svg");
+  background-image: url("./img/index/decorative-image/clock.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1698,6 +1703,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  overflow-x: hidden;
 }
 
 .additional-products__wrapper {
@@ -1719,6 +1725,33 @@
   font: inherit;
   margin: 0;
   margin-bottom: 36px;
+  display: inline-block;
+  position: relative;
+}
+.additional-products__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 1000%;
+  background-color: #67b737;
+  z-index: 1;
+  right: calc(100% + 30px);
+}
+.additional-products__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 1000%;
+  background-color: #67b737;
+  z-index: 1;
+  left: calc(50% + 130px);
+}
+@media (min-width: 768px) {
+  .additional-products__title::after {
+    left: calc(100% + 40px);
+  }
 }
 @media (min-width: 768px) {
   .additional-products__title {
@@ -1769,7 +1802,7 @@
 
 .additional-products__banner {
   position: relative;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../../img/catalog/decorative-image/image-background-catalog.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("./img/catalog/decorative-image/image-background-catalog.jpg");
   background-repeat: no-repeat;
   background-position: 50% 60%;
   background-size: cover;
@@ -1797,7 +1830,7 @@
   position: absolute;
   width: 78px;
   height: 80px;
-  background-image: url("../../../img/catalog/decorative-image/gift.svg");
+  background-image: url("./img/catalog/decorative-image/gift.svg");
   top: 59px;
 }
 @media (min-width: 768px) {
@@ -2135,7 +2168,7 @@
   position: absolute;
   width: 18px;
   height: 14px;
-  background-image: url("../../../img/form/checkbox.svg");
+  background-image: url("./img/form/checkbox.svg");
   top: 8px;
   left: 6px;
 }
@@ -2316,6 +2349,7 @@
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0 10px;
@@ -2336,19 +2370,34 @@
   }
 }
 
+.contacts__icon-email,
+.contacts__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+@media (min-width: 768px) {
+  .contacts__icon-email,
+.contacts__icon-phone {
+    top: 20px;
+  }
+}
+
 .contacts__input {
   position: relative;
   padding-right: 40px;
 }
-.contacts__input--email {
-  background-image: url("../../../img/form/email.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
+.contacts__input:invalid + .contacts__icon-email path {
+  stroke: #ff8282;
 }
-.contacts__input--phone {
-  background-image: url("../../../img/form/phone.svg");
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
+.contacts__input:invalid + .contacts__icon-phone path {
+  stroke: #ff8282;
+}
+.contacts__input:focus-visible + .contacts__icon-email path {
+  stroke: #67b737;
+}
+.contacts__input:focus-visible + .contacts__icon-phone path {
+  stroke: #67b737;
 }
 
 .comment {
