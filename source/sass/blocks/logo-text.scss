@@ -1,6 +1,10 @@
 .logo-text {
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.8;
   }
