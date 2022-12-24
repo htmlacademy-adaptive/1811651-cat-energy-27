@@ -237,6 +237,11 @@
 .logo-text__item {
   display: block;
 }
+@media (min-width: 768px) {
+  .logo-text__item {
+    display: none;
+  }
+}
 
 .menu {
   padding: 0;
