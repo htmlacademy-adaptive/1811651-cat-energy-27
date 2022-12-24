@@ -50,7 +50,7 @@
       position: absolute;
       width: 36px;
       height: 50px;
-      background-image: url("../../../img/index/decorative-image/cat-slim.svg");
+      background-image: url("../img/index/decorative-image/cat-slim.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       top: 21px;
@@ -82,7 +82,7 @@
       position: absolute;
       width: 67px;
       height: 28px;
-      background-image: url("../../../img/index/decorative-image/cat-pro.svg");
+      background-image: url("../img/index/decorative-image/cat-pro.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       top: 35px;
@@ -186,7 +186,7 @@
     position: absolute;
     width: 32px;
     height: 10px;
-    background-image: url("./img/index/decorative-image/arrow.svg");
+    background-image: url("../img/index/decorative-image/arrow.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     top: 4px;
@@ -201,7 +201,7 @@
   &:hover {
     &::before {
       background: none;
-      background-image: url("./img/index/decorative-image/long-arrow.svg");
+      background-image: url("../img/index/decorative-image/long-arrow.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       top: 4px;
