@@ -16,4 +16,8 @@
 
 .logo-text__item {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
