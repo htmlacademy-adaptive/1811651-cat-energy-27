@@ -451,14 +451,14 @@
   max-width: 1440px;
 }
 
-.dealers-info__map-wrapper iframe {
+.dealers-info__map-interactive {
   display: block;
   border: none;
   width: 100%;
   height: 362px;
 }
 @media (min-width: 768px) {
-  .dealers-info__map-wrapper iframe {
+  .dealers-info__map-interactive {
     height: 400px;
   }
 }
