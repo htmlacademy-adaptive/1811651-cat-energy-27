@@ -85,3 +85,9 @@
     font-size: 16px;
   }
 }
+
+.additional-product-card__button {
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+  }
+}
