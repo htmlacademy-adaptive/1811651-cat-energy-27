@@ -103,24 +103,24 @@
 .contacts__input {
   position: relative;
   padding-right: 40px;
+}
 
-  &:invalid + {
-    .contacts__icon-email path {
-      stroke: #ff8282;
-    }
-
-    .contacts__icon-phone path {
-      stroke: #ff8282;
-    }
+.contacts__input:invalid + {
+  .contacts__icon-email path {
+    stroke: #ff8282;
   }
 
-  &:focus-visible + {
-    .contacts__icon-email path {
-      stroke: #67b737;
-    }
+  .contacts__icon-phone path {
+    stroke: #ff8282;
+  }
+}
 
-    .contacts__icon-phone path {
-      stroke: #67b737;
-    }
+.contacts__input:focus-visible + {
+  .contacts__icon-email path {
+    stroke: #67b737;
+  }
+
+  .contacts__icon-phone path {
+    stroke: #67b737;
   }
 }

@@ -20,11 +20,11 @@
 .social-list__link {
   display: block;
 
-  &:hover path {
-    fill: #68b738;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.social-list__link:hover path {
+  fill: #68b738;
 }

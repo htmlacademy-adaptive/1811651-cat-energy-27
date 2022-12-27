@@ -84,12 +84,50 @@
   position: relative;
   padding: 6px 0 6px 46px;
 
-  &:hover .control-input__mark {
-    border-color: #bababa;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-left: 60px;
   }
+}
+
+.additionally__control-input:checked + .additionally__control-input-mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/form/checkbox.svg");
+  top: 8px;
+  left: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 18px;
+    background-size: 24px 18px;
+    top: 11px;
+    left: 8px;
+  }
+}
+
+.additionally__control-input:disabled + .additionally__control-input-mark,
+.additionally__control-input:disabled ~ .additionally__label {
+  opacity: 0.3;
+}
+
+.additionally__control-input-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+  }
+}
+
+.additionally__item-title:hover .additionally__control-input-mark {
+  border-color: #bababa;
 }
