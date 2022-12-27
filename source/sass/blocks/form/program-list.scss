@@ -50,7 +50,7 @@
 }
 
 
-.program-list__radio:checked .program-list__radio-mark::before {
+.program-list__radio:checked + .program-list__radio-mark::before {
   content: "";
   position: absolute;
   width: 13px;
