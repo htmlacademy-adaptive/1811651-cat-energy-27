@@ -2,7 +2,9 @@
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/font.scss";
-@import "./global/body.scss";
+@import "./global/main-container.scss";
+@import "./global/catalog.scss";
+@import "./global/select-program.scss";
 @import "./global/visually-hidden.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
@@ -40,6 +42,8 @@
 @import "./blocks/form/programm-selection.scss";
 @import "./blocks/form/profile.scss";
 @import "./blocks/form/input.scss";
+@import "./blocks/form/radio.scss";
+@import "./blocks/form/control-input.scss";
 @import "./blocks/form/cat-info.scss";
 @import "./blocks/form/program-list.scss";
 @import "./blocks/form/contacts.scss";

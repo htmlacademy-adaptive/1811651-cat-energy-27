@@ -1,13 +1,15 @@
 .additional-products {
   @include font($oswald,24px,24px,400,#000000);
+
+  overflow-x: hidden;
 }
 
 .additional-products__wrapper {
   margin: 0 auto;
-  width: 280px;
+  width: 87%;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 92%;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +19,43 @@
 
 .additional-products__title {
   font: inherit;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 36px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: 1;
+    right: calc(100% + 30px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: 1;
+    left: calc(50% + 130px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
 }
 
 .additional-products__inner-wrapper {
@@ -24,14 +63,17 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 35px 0;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     gap: 69px 0;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 0 79px;
+    margin-bottom: 86px;
   }
 }
 
@@ -40,10 +82,10 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 280px;
+  grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 708px;
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,9 +94,58 @@
 }
 
 .additional-products__banner {
-  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decorative-image/image-background-catalog.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-size: cover;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    max-height: 200px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 290px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/catalog/decorative-image/gift.svg");
+    top: 59px;
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+    }
+  }
 }
 
 .additional-products__banner-text {
   @include font($lato,16px,20px,400,#ffffff);
+
+
+  padding: 0 60px 43px 60px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 43px 40px;
+    margin: 0;
+    text-align: center;
+  }
 }

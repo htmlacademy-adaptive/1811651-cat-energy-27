@@ -1,18 +1,23 @@
 .contacts {
+  margin: 0;
+  padding: 26px 0 23px 0;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 569px 568px;
-    gap: 0 80px;
+    padding: 0;
   }
 }
 
 .contacts__title {
-  font-size: $font-head-h3;
-  line-height: 26px;
+  position: relative;
+  display: inline-block;
+  padding-right: 28%;
+
+  @include font($oswald,$font-head-h3,26px,400,#000000);
+  text-transform: none;
+  margin: 0;
+  margin-bottom: 35px;
+
 
   &--darker {
     color: #222222;
@@ -21,9 +26,101 @@
   &--dark {
     color: #000000;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: -1;
+    right: calc(100% + 40px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: -1;
+    left: calc(65% + 40px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 568px;
+    gap: 0 80px;
+  }
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
   align-items: center;
+  gap: 0 10px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__item-title {
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.contacts__icon-email,
+.contacts__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
+}
+
+.contacts__input {
+  position: relative;
+  padding-right: 40px;
+}
+
+.contacts__input:invalid + {
+  .contacts__icon-email path {
+    stroke: #ff8282;
+  }
+
+  .contacts__icon-phone path {
+    stroke: #ff8282;
+  }
+}
+
+.contacts__input:focus-visible + {
+  .contacts__icon-email path {
+    stroke: #67b737;
+  }
+
+  .contacts__icon-phone path {
+    stroke: #67b737;
+  }
 }

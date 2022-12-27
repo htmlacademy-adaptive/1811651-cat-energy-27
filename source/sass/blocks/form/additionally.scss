@@ -1,10 +1,18 @@
 .additionally {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .additionally__title {
-  font-size: $font-head-h3;
-  line-height: 26px;
+  @include font($oswald,$font-head-h3,26px,400,#000000);
+  position: relative;
+  display: inline-block;
+  text-transform: none;
+  margin: 0;
+  margin-bottom: 34px;
 
   &--darker {
     color: #222222;
@@ -12,6 +20,37 @@
 
   &--dark {
     color: #000000;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: -1;
+    right: calc(100% + 40px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 1000%;
+    background-color: #67b737;
+    z-index: -1;
+    left: calc(10% + 150px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    margin-bottom: 57px;
   }
 }
 
@@ -22,7 +61,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 282px 282px;
+    grid-template-columns: 1fr 1fr;
     gap: 32px 64px;
   }
 
@@ -30,4 +69,65 @@
     grid-template-columns: repeat(4, 242px);
     gap: 0 84px;
   }
+}
+
+.additionally__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+}
+
+.additionally__item-title {
+  display: inline-block;
+  position: relative;
+  padding: 6px 0 6px 46px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+}
+
+.additionally__control-input:checked + .additionally__control-input-mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/form/checkbox.svg");
+  top: 8px;
+  left: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 18px;
+    background-size: 24px 18px;
+    top: 11px;
+    left: 8px;
+  }
+}
+
+.additionally__control-input:disabled + .additionally__control-input-mark,
+.additionally__control-input:disabled ~ .additionally__label {
+  opacity: 0.3;
+}
+
+.additionally__control-input-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+  }
+}
+
+.additionally__item-title:hover .additionally__control-input-mark {
+  border-color: #bababa;
 }

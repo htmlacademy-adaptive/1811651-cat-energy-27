@@ -1,5 +1,30 @@
 .social-list {
-  padding: 0;
+  width: 100%;
+  padding: 20px 0;
   margin: 0;
   list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10%;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+    border-bottom: none;
+  }
+}
+
+.social-list__link {
+  display: block;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-list__link:hover path {
+  fill: #68b738;
 }
