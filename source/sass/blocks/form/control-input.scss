@@ -1,5 +1,5 @@
-.control-input {
-  &:checked + .control-input__mark::before {
+.additionally__control-input {
+  &:checked + .additionally__control-input-mark::before {
     content: "";
     position: absolute;
     width: 18px;
@@ -17,13 +17,13 @@
     }
   }
 
-  &:disabled + .control-input__mark,
+  &:disabled + .additionally__control-input-mark,
   &:disabled ~ .additionally__label {
     opacity: 0.3;
   }
 }
 
-.control-input__mark {
+.additionally__control-input-mark {
   position: absolute;
   width: 30px;
   height: 30px;

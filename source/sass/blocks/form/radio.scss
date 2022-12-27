@@ -1,5 +1,5 @@
 .radio {
-  &:checked + .radio__mark::before {
+  &:checked + .program-list__radio-mark::before {
     content: "";
     position: absolute;
     width: 13px;
@@ -8,23 +8,36 @@
     border-radius: 50%;
     top: 8px;
     left: 8px;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      top: 11px;
+      left: 11px;
+    }
   }
 
-  &:hover + .radio__mark {
+  &:hover + .program-list__radio-mark {
     border-color: #bababa;
   }
 
-  &:disabled + .radio__mark,
+  &:disabled + .program-list__radio-mark,
   &:disabled ~ .program-list__item-title {
     opacity: 0.3;
   }
 }
 
-.radio__mark {
+.program-list__radio-mark {
   position: absolute;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
   top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
