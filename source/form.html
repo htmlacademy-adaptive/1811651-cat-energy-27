@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -77,21 +81,21 @@
                 <div class="programm-selection__wrapper programm-selection__wrapper--radio">
                   <div class="program-list__item">
                     <label class="program-list__item-title program-list__item-title--darker" for="less_weight">
-                      <input class="program-list__radio radio visually-hidden" type="radio" name="programm" id="less_weight" value="Похудение" checked> <!--вот тут проблема с классом radio-->
+                      <input class="program-list__radio visually-hidden" type="radio" name="programm" id="less_weight" value="Похудение" checked> <!--вот тут проблема с классом radio-->
                       <span class="program-list__radio-mark"></span>
                       <span class="program-list__label">Похудение</span>
                     </label>
                   </div>
                   <div class="program-list__item">
                     <label class="program-list__item-title program-list__item-title--darker" for="more_weight">
-                      <input class="program-list__radio radio visually-hidden" type="radio" name="programm" id="more_weight" value="Набор массы">  <!--вот тут проблема с классом radio-->
+                      <input class="program-list__radio visually-hidden" type="radio" name="programm" id="more_weight" value="Набор массы">  <!--вот тут проблема с классом radio-->
                       <span class="program-list__radio-mark"></span>
                       <span class="program-list__label">Набор массы</span>
                     </label>
                   </div>
                   <div class="program-list__item">
                     <label class="program-list__item-title program-list__item-title--darker" for="need_advice">
-                      <input class="program-list__radio radio visually-hidden" type="radio" name="programm" id="need_advice" value="Нужен ваш совет"> <!--вот тут проблема с классом radio-->
+                      <input class="program-list__radio visually-hidden" type="radio" name="programm" id="need_advice" value="Нужен ваш совет"> <!--вот тут проблема с классом radio-->
                       <span class="program-list__radio-mark"></span>
                       <span class="program-list__label">Не знаю (нужен ваш совет)</span>
                     </label>
@@ -196,7 +200,10 @@
               allowfullscreen
               title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
             </iframe>
-            <img class="dealers-info__logo-pin" src="img/index/map-pin.png" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/map-pin-tablet.png 1x, img/index/map-pin-tablet@2x.png 2x">
+              <img class="dealers-info__logo-pin" src="img/index/map-pin.png" srcset="img/index/map-pin@2x.png 2x" width="57" height="53" alt="Логотип-пин магазина Кэт Энерджи">
+            </picture>
           </div>
         </div>
       </section>

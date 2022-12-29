@@ -156,6 +156,13 @@
   }
 }
 
+.product-card__image-wrapper {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
 .product-card__image {
   grid-column: 1/2;
   grid-row: 1/3;
