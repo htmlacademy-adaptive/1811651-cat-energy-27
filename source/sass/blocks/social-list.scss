@@ -25,6 +25,10 @@
   }
 }
 
-.social-list__link:hover path {
+.social-list__icon {
+  fill: #666666;
+}
+
+.social-list__link:hover .social-list__icon {
   fill: #68b738;
 }

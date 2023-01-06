@@ -35,6 +35,10 @@
   }
 }
 
-.copyright__link:hover path {
+.copyright__icon {
+  fill: #2e368f;
+}
+
+.copyright__link:hover .copyright__icon {
   fill: #68b738;
 }
