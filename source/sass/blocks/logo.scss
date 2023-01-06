@@ -1,0 +1,30 @@
+.logo {
+  width: 191px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image-mobile {
+  width: 34px;
+}
+
+.logo__image {
+  display: none;
+}
