@@ -1,10 +1,14 @@
 .contacts {
   margin: 0;
-  padding: 26px 0 23px 0;
+  padding: 24px 0 10px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 48px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -30,18 +34,22 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     height: 2px;
     width: 1000%;
     background-color: #67b737;
     z-index: -1;
     right: calc(100% + 40px);
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     height: 2px;
     width: 1000%;
     background-color: #67b737;
@@ -50,6 +58,7 @@
 
     @media (min-width: $tablet-width) {
       left: calc(100% + 40px);
+      top: 50%;
     }
   }
 
@@ -78,6 +87,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    gap: 0 20px;
   }
 }
 
@@ -92,8 +102,8 @@
 .contacts__icon-email,
 .contacts__icon-phone {
   position: absolute;
-  top: 13px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
 
   @media (min-width: $tablet-width) {
     top: 20px;
@@ -103,6 +113,11 @@
 .contacts__input {
   position: relative;
   padding-right: 40px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .contacts__input:invalid + {

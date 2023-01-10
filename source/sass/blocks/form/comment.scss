@@ -66,12 +66,13 @@
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
-    width: 97%;
+    width: 94%;
     font-size: 20px;
-    height: 154px;
+    height: 140px;
+    padding: 20px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1180px;
   }
 }
