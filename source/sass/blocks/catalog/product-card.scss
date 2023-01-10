@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr 40px;
 
-  padding: 8px 0 11px 0;
+  padding: 6px 0;
 
   &::after {
     content: "";
@@ -12,7 +12,7 @@
     width: 114%;
     height: 1px;
     background-color: #ebebeb;
-    bottom: -10px;
+    bottom: -19px;
     left: -7%;
     right: -10%;
 
@@ -29,14 +29,14 @@
     width: 30px;
     height: 2px;
     background-color: #d3d3d3;
-    top: 23px;
+    top: 40px;
     left: auto;
     right: auto;
     transform: rotate(90deg);
 
     @media (min-width: $tablet-width) {
       width: 60px;
-      top: 62px;
+      top: 75px;
     }
   }
 
@@ -48,6 +48,10 @@
 
     padding: 0 36px 39px 36px;
     background: linear-gradient(to top, #f2f2f2 84%, #ffffff 16%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 35px 40px 40px;
   }
 
   &--more-info {
@@ -63,11 +67,11 @@
       width: 30px;
       height: 2px;
       background-color: #d3d3d3;
-      top: 23px;
+      top: 40px;
 
       @media (min-width: $tablet-width) {
         width: 60px;
-        top: 62px;
+        top: 75px;
       }
     }
 
@@ -76,6 +80,7 @@
       height: 388px;
       margin-top: 80px;
       border: 2px solid #f2f2f2;
+      justify-content: flex-end;
     }
   }
 }
@@ -94,36 +99,39 @@
   grid-row: 1/2;
   grid-column: 2/3;
 
-  &--more-info {
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 8px;
-    padding-top: 53px;
-
-    @media (min-width: $tablet-width) {
-      padding: 161px 55px 0 55px;
-      margin: 0;
-      text-align: center;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 160px 55px 0 55px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-top: 34px;
     margin-bottom: 21px;
+    padding: 0 60px;
 
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
     padding-left: 15px;
     padding-right: 20px;
+  }
+
+  &--more-info {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-top: 75px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 55px;
+      margin-top: 120px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 160px 10px 0 10px;
+    }
   }
 }
 
@@ -148,7 +156,7 @@
     line-height: 18px;
     padding: 0 40px;
     text-align: center;
-    margin-bottom: 67px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,6 +178,8 @@
   justify-self: center;
 
   &--size-xs {
+    padding-top: 20px;
+
     @media (min-width: $tablet-width) {
       width: 161px;
       height: 172px;
