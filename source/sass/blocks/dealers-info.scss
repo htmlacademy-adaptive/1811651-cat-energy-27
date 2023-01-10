@@ -21,8 +21,10 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
-    width: 92%;
+    justify-content: space-between;
+    width: 82%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,7 +64,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
+}
+
+.dealers-info__contacts-wrapper {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .dealers-info__map-wrapper {
