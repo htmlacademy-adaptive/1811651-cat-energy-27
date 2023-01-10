@@ -8,7 +8,7 @@
 
 .dealers-info__container {
   position: relative;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -66,11 +66,21 @@
     line-height: 20px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .dealers-info__contacts-wrapper {
-  display: inline-block;
-  margin-bottom: 16px;
+  @media (min-width: $tablet-width){
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .dealers-info__map-wrapper {
@@ -81,6 +91,10 @@
   align-items: center;
   min-width: 320px;
   max-width: 1440px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -20px;
+  }
 }
 
 .dealers-info__map-interactive {
