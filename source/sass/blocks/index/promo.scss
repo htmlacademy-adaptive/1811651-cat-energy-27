@@ -81,7 +81,7 @@
 
 .promo__title {
   margin: 0;
-  padding: 25px 15px;
+  padding: 25px 10px;
   font: inherit;
   text-align: center;
 
@@ -134,6 +134,8 @@
 }
 
 .promo__button {
+  font-size: 14px;
+
   @media (min-width: $tablet-width) {
     order: 2;
     position: relative;
