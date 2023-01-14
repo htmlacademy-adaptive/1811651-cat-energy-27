@@ -8,7 +8,7 @@
 
 .dealers-info__container {
   position: relative;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -21,8 +21,10 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
-    width: 92%;
+    justify-content: space-between;
+    width: 82%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +64,22 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.dealers-info__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

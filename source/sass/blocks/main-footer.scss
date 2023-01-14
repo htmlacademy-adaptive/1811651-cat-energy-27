@@ -14,17 +14,20 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 0 20%;
+    padding: 35px 0;
 
     width: 92%;
     max-width: 1220px;
+    padding-top: 35px;
   }
 }
 
 .main-footer__logo-footer {
   width: 100%;
   text-align: center;
-  padding: 39px 0 32px 0;
   border-bottom: 1px solid #d9d9d9;
+  padding-top: 35px;
+  padding-bottom: 30px;
 
   &:hover {
     opacity: 0.8;
@@ -36,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     width: 33%;
+    padding: 0;
     text-align: left;
     border-bottom: none;
   }

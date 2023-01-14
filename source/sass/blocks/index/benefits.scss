@@ -32,8 +32,10 @@
   position: relative;
   counter-increment: my-awesome-counter;
   min-height: 54px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  padding: 3px 0;
   padding-left: 80px;
+
 
   &::before {
     content: "";
@@ -60,7 +62,7 @@
       line-height: 280px;
       color: #f2f2f2;
       top: 0;
-      right: 0;
+      right: 15px;
       z-index: -2;
     }
   }

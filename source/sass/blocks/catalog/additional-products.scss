@@ -33,7 +33,11 @@
     width: 1000%;
     background-color: #67b737;
     z-index: 1;
-    right: calc(100% + 30px);
+    right: calc(90% + 30px);
+
+    @media (min-width: $desktop-width) {
+      right: calc(100% + 30px);
+    }
   }
 
   &::after {
@@ -55,6 +59,11 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -73,7 +82,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 0 79px;
-    margin-bottom: 86px;
+    margin-bottom: 85px;
   }
 }
 
@@ -95,13 +104,13 @@
 
 .additional-products__banner {
   position: relative;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decorative-image/image-background-catalog.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decorative-image/image-background-catalog.webp");
   background-repeat: no-repeat;
   background-position: 50% 60%;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decorative-image/image-background-catalog@2x.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decorative-image/image-background-catalog@2x.webp");
   }
   height: 290px;
   display: flex;
