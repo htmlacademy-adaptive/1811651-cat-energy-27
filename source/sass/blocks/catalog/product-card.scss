@@ -200,7 +200,7 @@
 
   &--more-info {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 5px;
 
     @media (min-width: $desktop-width) {
       min-width: 148px;
@@ -210,7 +210,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     min-width: 248px;
-    padding: 10px 0;
+    padding: 10px 5px;
   }
 
   @media (min-width: $desktop-width) {
