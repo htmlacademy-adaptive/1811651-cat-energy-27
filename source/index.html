@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="icon" href="img/favicons/apple-icon-180x180.png">
-    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="manifest" href="../manifest.webmanifest">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -136,7 +139,7 @@
                 <source type="image/webp" media="(min-width:768px)" srcset="img/index/cat-slider-tablet.webp 1x, img/index/cat-slider-tablet@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="img/index/cat-slider-mobile.webp 1x,img/index/cat-slider-mobile@2x.webp 2x" width="280" height="256" alt="Кот">
                 <source media="(min-width:768px)" srcset="img/index/cat-slider-tablet.png 1x, img/index/cat-slider-tablet@2x.png 2x" width="560" height="512">
-                <img src="img/index/cat-slider-mobile.png" srcset="img/index/cat-slider-mobile@2x.png 2x" width="280" height="256" alt="Кот">
+                <img loading="lazy" src="img/index/cat-slider-mobile.png" srcset="img/index/cat-slider-mobile@2x.png 2x" width="280" height="256" alt="Кот">
               </picture>
             </div>
             <div class="difference-slider__after"></div>
