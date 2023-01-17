@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 40px 28px 38px;
+    padding: 25px 40px 28px 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
@@ -41,8 +41,9 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    align-items: center;
     gap: 0 50px;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,6 +91,6 @@
 
 .additional-product-card__button {
   @media (min-width: $desktop-width) {
-    min-width: 244px;
+    min-width: 234px;
   }
 }
