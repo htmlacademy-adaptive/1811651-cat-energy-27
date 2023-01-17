@@ -20,7 +20,7 @@
 .additional-products__title {
   font: inherit;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 36px;
   display: inline-block;
   position: relative;
@@ -59,11 +59,14 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    margin-top: 35px;
     padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-top: 30px;
+    margin-bottom: 82px;
   }
 }
 
