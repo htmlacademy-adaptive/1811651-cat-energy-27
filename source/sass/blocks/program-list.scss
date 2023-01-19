@@ -49,6 +49,21 @@
   }
 }
 
+.program-list__radio-mark {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .program-list__item-title:hover .program-list__radio-mark {
   border: 1px solid #000000;
 }
@@ -76,22 +91,11 @@
   border-color: #bababa;
 }
 
+.program-list__radio:focus-visible + .program-list__radio-mark {
+  border: 2px solid #444444;
+}
+
 .program-list__radio:disabled + .program-list__radio-mark,
 .program-list__radio:disabled ~ .program-list__item-title {
   opacity: 0.3;
-}
-
-.program-list__radio-mark {
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-  }
 }

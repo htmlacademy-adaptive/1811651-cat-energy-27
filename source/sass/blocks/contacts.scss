@@ -120,7 +120,7 @@
   }
 }
 
-.contacts__input:invalid + {
+.contacts__input--error + {
   .contacts__icon-email path {
     stroke: #ff8282;
   }
