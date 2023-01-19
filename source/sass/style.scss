@@ -2,9 +2,6 @@
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/font.scss";
-@import "./global/main-container.scss";
-@import "./global/catalog.scss";
-@import "./global/select-program.scss";
 @import "./global/visually-hidden.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
@@ -19,31 +16,31 @@
 @import "./blocks/button.scss";
 
 //index
-@import "./blocks/index/main-container.scss";
-@import "./blocks/index/promo.scss";
-@import "./blocks/index/programms.scss";
-@import "./blocks/index/programm-card.scss";
-@import "./blocks/index/about-product.scss";
-@import "./blocks/index/benefits.scss";
-@import "./blocks/index/example.scss";
-@import "./blocks/index/value.scss";
-@import "./blocks/index/expenses.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/programms.scss";
+@import "./blocks/programm-card.scss";
+@import "./blocks/about-product.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/example.scss";
+@import "./blocks/value.scss";
+@import "./blocks/expenses.scss";
 
 //catalog
-@import "./blocks/catalog/catalog.scss";
-@import "./blocks/catalog/products.scss";
-@import "./blocks/catalog/product-card.scss";
-@import "./blocks/catalog/stats.scss";
-@import "./blocks/catalog/additional-products.scss";
-@import "./blocks/catalog/additional-product-card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-product-card.scss";
 
 //form
-@import "./blocks/form/select-program.scss";
-@import "./blocks/form/programm-selection.scss";
-@import "./blocks/form/profile.scss";
-@import "./blocks/form/input.scss";
-@import "./blocks/form/cat-info.scss";
-@import "./blocks/form/program-list.scss";
-@import "./blocks/form/contacts.scss";
-@import "./blocks/form/comment.scss";
-@import "./blocks/form/additionally.scss";
+@import "./blocks/select-program.scss";
+@import "./blocks/programm-selection.scss";
+@import "./blocks/profile.scss";
+@import "./blocks/input.scss";
+@import "./blocks/cat-info.scss";
+@import "./blocks/program-list.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/additionally.scss";

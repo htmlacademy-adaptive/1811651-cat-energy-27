@@ -132,6 +132,10 @@
   }
 }
 
+.additionally__control-input:focus-visible + .additionally__control-input-mark {
+  border: 2px solid #444444;
+}
+
 .additionally__item-title:hover .additionally__control-input-mark {
   border-color: #bababa;
 }
