@@ -45,13 +45,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 64px;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     grid-template-columns: 568px 568px;
     gap: 0 84px;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
   }
 }

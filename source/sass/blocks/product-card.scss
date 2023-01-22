@@ -38,6 +38,10 @@
       width: 60px;
       top: 75px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 85px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -46,12 +50,12 @@
     align-items: center;
     justify-content: flex-end;
 
-    padding: 0 32px 39px 32px;
+    padding: 0 40px 39px 40px;
     background: linear-gradient(to top, #f2f2f2 84%, #ffffff 16%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 35px 40px 40px;
+    padding: 0 40px 40px 40px;
   }
 
   &--more-info {
@@ -73,6 +77,10 @@
         width: 60px;
         top: 75px;
       }
+
+      @media (min-width: $desktop-width) {
+        top: 85px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -82,15 +90,20 @@
       border: 2px solid #f2f2f2;
       justify-content: flex-end;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 }
 
 
 .product-card__title {
   margin: 0;
-  margin-top: 11px;
+  margin-top: 15px;
   margin-right: 64px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
@@ -103,7 +116,7 @@
     margin: 0;
     margin-top: 30px;
     margin-bottom: 21px;
-    padding: 0 60px;
+    padding: 0 55px;
 
     font-size: 20px;
     line-height: 24px;
@@ -113,7 +126,7 @@
   @media (min-width: $desktop-width) {
     text-align: center;
     padding-left: 15px;
-    padding-right: 20px;
+    padding-right: 15px;
     margin-bottom: 20px;
     margin-top: 0;
   }
@@ -163,6 +176,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 80px;
   }
 }
 
@@ -206,15 +220,6 @@
   grid-column: 1/3;
   grid-row: 3/4;
 
-  &--more-info {
-    width: 100%;
-    padding: 10px 5px;
-
-    @media (min-width: $desktop-width) {
-      min-width: 148px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     min-width: 235px;
     padding: 10px 5px;
@@ -222,5 +227,15 @@
 
   @media (min-width: $desktop-width) {
     min-width: 158px;
+  }
+
+  &--more-info {
+    width: 100%;
+    padding: 10px 5px;
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+      min-width: 155px;
+    }
   }
 }

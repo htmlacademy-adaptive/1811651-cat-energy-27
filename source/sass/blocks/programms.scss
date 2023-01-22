@@ -6,19 +6,19 @@
 
   width: 87%;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 92%;
     gap: 30px 0;
     max-width: 1220px;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;
     gap: 0 80px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 }
