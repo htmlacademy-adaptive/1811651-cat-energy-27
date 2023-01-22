@@ -1,10 +1,14 @@
 .comment {
   margin: 0;
-  padding-bottom: 22px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }
 

@@ -78,7 +78,7 @@
 
   width: 87%;
   margin: 0 auto;
-  padding: 12px 20px;
+  padding: 11px 20px;
 
   position: relative;
 
@@ -88,7 +88,6 @@
 
     margin: 0;
     padding: 0;
-    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,7 +124,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 13px;
   z-index: 2;
   display: block;
   width: 35px;
