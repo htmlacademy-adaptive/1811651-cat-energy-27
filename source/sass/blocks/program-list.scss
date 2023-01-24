@@ -96,6 +96,6 @@
 }
 
 .program-list__radio:disabled + .program-list__radio-mark,
-.program-list__radio:disabled ~ .program-list__item-title {
+.program-list__radio:disabled ~ .program-list__label {
   opacity: 0.3;
 }
