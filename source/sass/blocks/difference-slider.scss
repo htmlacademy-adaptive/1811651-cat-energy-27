@@ -1,0 +1,101 @@
+.difference-slider {
+  position: relative;
+}
+
+.difference-slider__control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.difference-slider__control-range {
+  width: 40px;
+  height: 260px;
+  margin: 0;
+  appearance: none;
+  background: inherit;
+  position: absolute;
+  top: -2px;
+  -webkit-appearance: none; /* stylelint-disable-line */     //Стайлинт ругается на префиксы//
+  -moz-appearance: none; /* stylelint-disable-line */
+  appearance: none; /* stylelint-disable-line */
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+
+  &::-moz-range-thumb {
+    -moz-appearance: none; /* stylelint-disable-line */
+    appearance: none; /* stylelint-disable-line */
+    width: 40px;
+    height: 260px;
+    border: none;
+    background: inherit;
+    background-image: url("../img/index/decorative-image/slider-control-default.webp");
+    background-repeat: no-repeat;
+    background-position: 52%;
+    z-index: 5;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+      background-image: url("../img/index/decorative-image/slider-control-default-tablet.webp");
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none; /* stylelint-disable-line */
+    appearance: none; /* stylelint-disable-line */
+    width: 40px;
+    height: 260px;
+    background-image: url("../img/index/decorative-image/slider-control-default.webp");
+    background-repeat: no-repeat;
+    background-position: 5%;
+    z-index: 5;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+      background-image: url("../img/index/decorative-image/slider-control-default-tablet.webp");
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    &::-moz-range-thumb {
+      background-image: url("../img/index/decorative-image/slider-control-hover.webp");
+      background-repeat: no-repeat;
+    }
+
+    &::-webkit-slider-thumb {
+      background-image: url("../img/index/decorative-image/slider-control-hover.webp");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::-moz-range-thumb {
+        background-image: url("../img/index/decorative-image/slider-control-hover-tablet.webp");
+        background-repeat: no-repeat;
+      }
+
+      &::-webkit-slider-thumb {
+        background-image: url("../img/index/decorative-image/slider-control-hover-tablet.webp");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
